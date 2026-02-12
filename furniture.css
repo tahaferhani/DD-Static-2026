@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat";
+    color: #333333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1145px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#main-navigation {
+    height: 122px;
+    display: flex;
+    align-items: center;
+}
+
+#main-navigation .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#main-navigation .logo {
+    font-weight: 700;
+    font-size: 34px;
+    color: #054C73;
+}
+
+#main-navigation .menu a {
+    font-weight: 600;
+    font-size: 14px;
+    color: #333333;
+    text-decoration: none;
+    margin-left: 60px;
+    transition: color 0.3s;
+}
+
+#main-navigation .menu a:hover {
+    color: #054C73;
+}
+
+#hero-banner {
+    /* background-image: url(./img/hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background: url(./img/hero-bg.jpg) no-repeat center / cover;
+    padding: 150px 0;
+}
+
+#hero-banner .container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#hero-banner .text-card {
+    padding: 40px;
+    background-color: #DFE9F4;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 443px;
+}
+
+#hero-banner .subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#hero-banner .title {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #054C73;
+    margin-bottom: 20px;
+}
+
+#hero-banner p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2.16;
+}
+
+.btn {
+    padding: 25px 70px;
+    background-color: #054C73;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 35px;
+    display: table;
+    margin-top: 30px;
+}
