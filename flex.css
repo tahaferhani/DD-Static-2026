@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+.rects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rect {
+    width: 33.33%;
+    height: 100px;
+    background-color: red;
+    border: 10px solid black;
+}
+
+.rect:first-of-type {
+    background-color: green;
+    border-color: blue;
+}
+
+.rect:last-of-type {
+    background-color: orange;
+    border-color: yellow;
+}
+
+@media (max-width: 1024px) {
+    .rect {
+        width: 50%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+    .rect {
+        width: 100%;
+    }
+}
+
+/*  > 1024px PC
+    >= 768px Tablet
+    < 768px Mobile 
+*/

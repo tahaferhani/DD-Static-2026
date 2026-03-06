@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <form action="index.html" method="GET" novalidate>
+        <input id="mar" type="radio" name="nationality">
+        <label for="mar">Maroccain</label>
+        <br>
+        <input id="alg" type="radio" name="nationality">
+        <label for="alg">Algérien</label>
+        <br>
+        <input id="tun" type="radio" name="nationality">
+        <label for="tun">Tunisien</label>
+
+
+        <br><br>
+        <input id="fr" type="radio" name="lang">
+        <label for="fr">Français</label>
+        <br>
+        <input id="en" type="radio" name="lang">
+        <label for="en">Anglais</label>
+        <br>
+        <input id="ar" type="radio" name="lang">
+        <label for="ar">Arabe</label>
+
+        <br><br>
+
+        <input type="range" min="0" max="100" step="10" value="50">
+
+        <br><br>
+
+        <label for="name">Nom complet</label>
+        <input type="text" id="name" name="nomcomplet" placeholder="Nom et prénom" required>
+
+        <br><br>
+        <label for="color">Couleur préférée</label>
+        <input type="color" id="color">
+
+        <br><br>
+        <label for="photo">Photo</label>
+        <input type="file" id="photo">
+
+        <br><br>
+        <label for="tel">Tél</label>
+
+        <input type="tel" id="tel" name="telephone" pattern="0[5678][0-9]{8}">
+
+        <br><br>
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" name="motdepasse">
+
+        <br><br>
+
+        <textarea rows="5" cols="50" placeholder="Entrez votre message ici..."></textarea>
+
+        <br><br>
+
+        <select name="pays">
+            <option value=""></option>
+            <option value="mar">Maroc</option>
+            <option value="alg">Algérie</option>
+            <option value="tun">Tunisie</option>
+        </select>
+
+        <br><br>
+        <input type="submit" value="Valider">
+        <input type="reset" value="Réinitialiser">
+    </form>
+</body>
+</html>
