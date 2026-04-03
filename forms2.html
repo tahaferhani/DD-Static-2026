@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea{
+            width: 500px;
+            height: 50px;
+            resize: none;
+        }
+
+        input[type=range] {
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <form action="detail.html" method="GET">
+        <label>Nom complet</label>
+        <input type="text" name="nomcomplet">
+        <br><br>
+        <label>Age</label>
+        <input type="number" name="age">
+        <br><br>
+        <label>Email</label>
+        <input type="email">
+        <br><br>
+        <label>Telephone</label>
+        <input type="tel">
+        <label for="pass">Mot de passe</label>
+        <input id="pass" type="password">
+
+        <br><br>
+        <label>Message</label>
+        <textarea></textarea>
+        
+        <br><br>
+        <input id="mar" type="checkbox">
+        <label for="mar">Maroccain</label>
+        <br>
+        <input id="alg" type="checkbox">
+        <label for="alg">Algérien</label>
+        <br>
+        <input id="tun" type="checkbox">
+        <label for="tun">Tunisien</label>
+
+        <br><br>
+        <input id="mar2" type="radio" name="natio">
+        <label for="mar2">Maroccain</label>
+        <br>
+        <input id="alg2" type="radio" name="natio">
+        <label for="alg2">Algérien</label>
+        <br>
+        <input id="tun2" type="radio" name="natio">
+        <label for="tun2">Tunisien</label>
+
+        <br><br>
+        <label>Francais</label>
+        <input type="radio" name="lang">
+        <label>Anglais</label>
+        <input type="radio" name="lang">
+        <label>Arabe</label>
+        <input type="radio" name="lang">
+
+        <br><br>
+        <input type="range" value="0" min="0" max="100" step="10"/>
+
+        <br><br>
+        <label for="color">Couleur préférée</label>
+        <input id="color" type="color">
+
+        <br><br>
+        <label for="photo">Photo</label>
+        <input id="photo" type="file" accept="image/*">
+
+        <br><br>
+        <select>
+            <option value="">Selectionner une valeur</option>
+            <option value="mar">Maroc</option>
+            <option value="alg">Algérie</option>
+            <option value="tun">Tunisie</option>
+        </select>
+
+        <br><br>
+        <button type="submit">Envoyer</button>
+        <input type="submit" value="Envoyer">
+        
+        <br><br>
+        <button type="button">Envoyer 2</button>
+        <input type="button" value="Envoyer 2">
+
+        <br><br>
+        <button type="reset">Annuler</button>
+        <input type="reset" value="Annuler">
+    </form>
+</body>
+</html>
